@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { TextField, Button, Box } from '@mui/material';
 import MenuComponent from './MenuComponent'
+import VerseComponent from './GetVerseComponent';
 
 
 const SwordPage = () => {
@@ -30,7 +31,7 @@ const SwordPage = () => {
       {/* Verse of the Day Placeholder - Replace with dynamic content if needed */}
       <Box>
         {/* Replace this with dynamically fetched verse */}
-        <p>[Verse of the Day]</p> 
+        <VerseComponent/>
       </Box>
       <Box>
         <TextField
