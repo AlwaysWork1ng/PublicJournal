@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const GetVerseComponent = () => {
   const [verseOfTheDay, setVerseOfTheDay] = useState('');
@@ -6,7 +6,7 @@ const GetVerseComponent = () => {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/verse-of-the-day')
+    fetch('https://getverseoftheday-e9039d4f19ed.herokuapp.com/api/verse-of-the-day')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
