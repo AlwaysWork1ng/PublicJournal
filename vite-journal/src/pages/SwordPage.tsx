@@ -43,12 +43,12 @@ const SwordPage = () => {
           fullWidth
           margin="normal"
           sx={{
-            input: { color: 'white' }, // Changes the text color
-            label: { color: 'white' }, // Changes the label color
+            input: { color: 'black' }, // Changes the text color
+            label: { color: 'black' }, // Changes the label color
             '.MuiOutlinedInput-root': {
-              '& fieldset': { borderColor: 'white' }, // Changes the border color
-              '&:hover fieldset': { borderColor: 'white' }, // Changes the border color on hover
-              '&.Mui-focused fieldset': { borderColor: 'white' } // Changes the border color when focused
+              '& fieldset': { borderColor: 'black' }, // Changes the border color
+              '&:hover fieldset': { borderColor: 'blue' }, // Changes the border color on hover
+              '&.Mui-focused fieldset': { borderColor: 'red' } // Changes the border color when focused
             }
           }}
         />
@@ -61,12 +61,12 @@ const SwordPage = () => {
           fullWidth
           margin="normal"
           sx={{
-            input: { color: 'white' }, // Changes the text color
-            label: { color: 'white' }, // Changes the label color
+            input: { color: 'black' }, // Changes the text color
+            label: { color: 'black' }, // Changes the label color
             '.MuiOutlinedInput-root': {
-              '& fieldset': { borderColor: 'white' }, // Changes the border color
-              '&:hover fieldset': { borderColor: 'white' }, // Changes the border color on hover
-              '&.Mui-focused fieldset': { borderColor: 'white' } // Changes the border color when focused
+              '& fieldset': { borderColor: 'black' }, // Changes the border color
+              '&:hover fieldset': { borderColor: 'blue' }, // Changes the border color on hover
+              '&.Mui-focused fieldset': { borderColor: 'red' } // Changes the border color when focused
             }
           }}
         />      
@@ -79,12 +79,12 @@ const SwordPage = () => {
           fullWidth
           margin="normal"
           sx={{
-            input: { color: 'white' }, // Changes the text color
-            label: { color: 'white' }, // Changes the label color
+            input: { color: 'black' }, // Changes the text color
+            label: { color: 'black' }, // Changes the label color
             '.MuiOutlinedInput-root': {
-              '& fieldset': { borderColor: 'white' }, // Changes the border color
-              '&:hover fieldset': { borderColor: 'white' }, // Changes the border color on hover
-              '&.Mui-focused fieldset': { borderColor: 'white' } // Changes the border color when focused
+              '& fieldset': { borderColor: 'black' }, // Changes the border color
+              '&:hover fieldset': { borderColor: 'blue' }, // Changes the border color on hover
+              '&.Mui-focused fieldset': { borderColor: 'red' } // Changes the border color when focused
             }
           }}
         />  
@@ -97,12 +97,12 @@ const SwordPage = () => {
           fullWidth
           margin="normal"
           sx={{
-            input: { color: 'white' }, // Changes the text color
-            label: { color: 'white' }, // Changes the label color
+            input: { color: 'black' }, // Changes the text color
+            label: { color: 'black' }, // Changes the label color
             '.MuiOutlinedInput-root': {
-              '& fieldset': { borderColor: 'white' }, // Changes the border color
-              '&:hover fieldset': { borderColor: 'white' }, // Changes the border color on hover
-              '&.Mui-focused fieldset': { borderColor: 'white' } // Changes the border color when focused
+              '& fieldset': { borderColor: 'black' }, // Changes the border color
+              '&:hover fieldset': { borderColor: 'blue' }, // Changes the border color on hover
+              '&.Mui-focused fieldset': { borderColor: 'red' } // Changes the border color when focused
             }
           }}
         />  
@@ -115,12 +115,12 @@ const SwordPage = () => {
           fullWidth
           margin="normal"
           sx={{
-            input: { color: 'white' }, // Changes the text color
-            label: { color: 'white' }, // Changes the label color
+            input: { color: 'black' }, // Changes the text color
+            label: { color: 'black' }, // Changes the label color
             '.MuiOutlinedInput-root': {
-              '& fieldset': { borderColor: 'white' }, // Changes the border color
-              '&:hover fieldset': { borderColor: 'white' }, // Changes the border color on hover
-              '&.Mui-focused fieldset': { borderColor: 'white' } // Changes the border color when focused
+              '& fieldset': { borderColor: 'black' }, // Changes the border color
+              '&:hover fieldset': { borderColor: 'blue' }, // Changes the border color on hover
+              '&.Mui-focused fieldset': { borderColor: 'red' } // Changes the border color when focused
             }
           }}
         />  

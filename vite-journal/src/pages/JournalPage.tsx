@@ -2,6 +2,8 @@ import * as React from 'react';
 import { TextField, Button, Box } from '@mui/material';
 import feelingWheelImage from '../assets/FeelWheel.jpg';
 import MenuComponent from './MenuComponent';
+import Divider from '@mui/material/Divider';
+
 
 const JournalPage = () => {
   const [thankfulFields, setThankfulFields] = React.useState(['']);
@@ -48,11 +50,11 @@ const JournalPage = () => {
   };
 
   return (
-    <div style={{ textAlign: 'center' }}>
-    <h1>Journal</h1>
+    <div>
+    <h1 style={{ textAlign: 'center' }}>Journal</h1>
       <MenuComponent/>
       <header>
-        <h2 style={{ textAlign: 'left' }}>Thankful</h2>
+        <h2>Thankful</h2>
         {thankfulFields.map((field, index) => (
           <TextField
           key={index}
@@ -67,12 +69,12 @@ const JournalPage = () => {
           fullWidth
           margin="normal"
           sx={{
-            input: { color: 'white' }, // Changes the text color
-            label: { color: 'white' }, // Changes the label color
+            input: { color: 'black' }, // Changes the text color
+            label: { color: 'black' }, // Changes the label color
             '.MuiOutlinedInput-root': {
-              '& fieldset': { borderColor: 'white' }, // Changes the border color
-              '&:hover fieldset': { borderColor: 'white' }, // Changes the border color on hover
-              '&.Mui-focused fieldset': { borderColor: 'white' } // Changes the border color when focused
+              '& fieldset': { borderColor: 'black' }, // Changes the border color
+              '&:hover fieldset': { borderColor: 'blue' }, // Changes the border color on hover
+              '&.Mui-focused fieldset': { borderColor: 'red' } // Changes the border color when focused
             }
           }}
 
@@ -80,9 +82,10 @@ const JournalPage = () => {
         ))}
         <Button onClick={handleAddThankfulField}>+ Main field</Button>
       </header>
+      <Divider sx={{ bgcolor: "secondary.light" }} />
 
       <header>
-        <h2 style={{ textAlign: 'left' }}>Thinking</h2>
+        <h2>Thinking</h2>
         {thinkingFields.map((field, index) => (
           <Box key={index}>
             <TextField
@@ -96,12 +99,12 @@ const JournalPage = () => {
                 fullWidth
                 margin="normal"
                 sx={{
-                input: { color: 'white' }, // Changes the text color
-                label: { color: 'white' }, // Changes the label color
-                '.MuiOutlinedInput-root': {
-                    '& fieldset': { borderColor: 'white' }, // Changes the border color
-                    '&:hover fieldset': { borderColor: 'white' }, // Changes the border color on hover
-                    '&.Mui-focused fieldset': { borderColor: 'white' } // Changes the border color when focused
+                  input: { color: 'black' }, // Changes the text color
+                  label: { color: 'black' }, // Changes the label color
+                  '.MuiOutlinedInput-root': {
+                    '& fieldset': { borderColor: 'black' }, // Changes the border color
+                    '&:hover fieldset': { borderColor: 'blue' }, // Changes the border color on hover
+                    '&.Mui-focused fieldset': { borderColor: 'red' } // Changes the border color when focused
           }
         }}
       />
@@ -119,12 +122,12 @@ const JournalPage = () => {
                     fullWidth
                     margin="normal"
                     sx={{
-                    input: { color: 'white' }, // Changes the text color
-                    label: { color: 'white' }, // Changes the label color
-                    '.MuiOutlinedInput-root': {
-                        '& fieldset': { borderColor: 'white' }, // Changes the border color
-                        '&:hover fieldset': { borderColor: 'white' }, // Changes the border color on hover
-                        '&.Mui-focused fieldset': { borderColor: 'white' } // Changes the border color when focused
+                      input: { color: 'black' }, // Changes the text color
+                      label: { color: 'black' }, // Changes the label color
+                      '.MuiOutlinedInput-root': {
+                        '& fieldset': { borderColor: 'black' }, // Changes the border color
+                        '&:hover fieldset': { borderColor: 'blue' }, // Changes the border color on hover
+                        '&.Mui-focused fieldset': { borderColor: 'red' } // Changes the border color when focused
           }
         }}
       />
@@ -133,6 +136,7 @@ const JournalPage = () => {
           </Box>
         ))}
         <Button onClick={handleAddThinkingField}>+ Main Field</Button>
+        <Divider sx={{ bgcolor: "secondary.light" }} />
         <br/>
         <Button onClick={downloadData}> Download Data</Button>
       </header>
