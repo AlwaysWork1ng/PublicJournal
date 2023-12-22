@@ -3,7 +3,7 @@ import MenuComponent from './MenuComponent'
 const HomePage = () => {
   return (
     <div>
-      <h1>Home</h1>
+      <h1>Ancient Warriors Journal</h1>
       <MenuComponent />
     </div>
   );
