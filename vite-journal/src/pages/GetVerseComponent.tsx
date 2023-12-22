@@ -6,7 +6,7 @@ const GetVerseComponent = () => {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetch('https://getverseoftheday-e9039d4f19ed.herokuapp.com/api/verse-of-the-day')
+    fetch('https://sqcssb428c.us-east-2.awsapprunner.com/api/verse-of-the-day')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
