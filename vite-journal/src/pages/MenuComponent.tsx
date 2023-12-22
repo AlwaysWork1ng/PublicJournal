@@ -15,17 +15,17 @@ export default function MenuComponent() {
 
   const toggleDrawer =
     (open: boolean) =>
-    (event: React.KeyboardEvent | React.MouseEvent) => {
-      if (
-        event.type === 'keydown' &&
-        ((event as React.KeyboardEvent).key === 'Tab' ||
-          (event as React.KeyboardEvent).key === 'Shift')
-      ) {
-        return;
-      }
+      (event: React.KeyboardEvent | React.MouseEvent) => {
+        if (
+          event.type === 'keydown' &&
+          ((event as React.KeyboardEvent).key === 'Tab' ||
+            (event as React.KeyboardEvent).key === 'Shift')
+        ) {
+          return;
+        }
 
-      setState({ ...state, left: open });
-    };
+        setState({ ...state, left: open });
+      };
 
   const list = (
     <Box
@@ -35,32 +35,33 @@ export default function MenuComponent() {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-          {[
-            { text: "Home", link: "/" },
-            { text: "Journal", link: "/Journal" },
-            { text: "SWORD Drill", link: "/SWORD" },
-          ].map((item) => (
-            <ListItem key={item.text} disablePadding>
-              <ListItemButton component={Link} to={item.link}>
-                <ListItemText primary={item.text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
+        {[
+          { text: "Home", link: "/" },
+          { text: "Journal", link: "/Journal" },
+          { text: "SWORD Drill", link: "/SWORD" },
+          { text: "13 Commandments", link: "/13-Commandments" },
+        ].map((item) => (
+          <ListItem key={item.text} disablePadding>
+            <ListItemButton component={Link} to={item.link}>
+              <ListItemText primary={item.text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
     </Box>
   );
 
   return (
     <div>
-      
-          <Button onClick={toggleDrawer( true)}>Menu</Button>
-          <Drawer
-            anchor='left'
-            open={state.left}
-            onClose={toggleDrawer( false)}
-          >
-            {list}
-          </Drawer>
+
+      <Button onClick={toggleDrawer(true)}>Menu</Button>
+      <Drawer
+        anchor='left'
+        open={state.left}
+        onClose={toggleDrawer(false)}
+      >
+        {list}
+      </Drawer>
     </div>
   );
 }
